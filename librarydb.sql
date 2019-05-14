@@ -39,7 +39,7 @@ CREATE TABLE `categories` (
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`id`, `kd_kategori`, `nama`, `keterangan`) VALUES
+INSERT INTO `categories` (`id`, `kd_buku`, `nama_buku`, `jenis`) VALUES
 (1, 'K001', 'sastra', 'buku sastra'),
 (2, 'K002', 'kimia', 'buku kimia'),
 (3, 'K003', 'fisika', 'buku fisika'),
@@ -72,7 +72,7 @@ INSERT INTO `hibernate_sequence` (`next_val`) VALUES
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `kd_kategori` (`kd_kategori`);
+  ADD UNIQUE KEY `kd_buku` (`kd_buku`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
